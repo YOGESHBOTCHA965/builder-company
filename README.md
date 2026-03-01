@@ -1,6 +1,6 @@
-# 🏡 Prestige Homes — Luxury Custom Home Builder Website
+# 🏡 Prestige Homes: Luxury Custom Home Builder Website
 
-A full-stack luxury real estate marketing website built with **Next.js 15 (App Router)**, **TypeScript**, and a fully custom CSS design system — no Tailwind, no component libraries. Inspired by top-tier home builder brands and designed to outperform them.
+A full-stack luxury real estate marketing website built with **Next.js 15 (App Router)**, **TypeScript**, and a fully custom CSS design system (no Tailwind, no component libraries). Inspired by top-tier home builder brands and designed to outperform them.
 
 > **Live demo:** [https://builder-company.vercel.app](https://builder-company.vercel.app)
 
@@ -11,35 +11,35 @@ A full-stack luxury real estate marketing website built with **Next.js 15 (App R
 ### Pages
 | Route | Description |
 |---|---|
-| `/` | Home — hero, hot homes, stats, regions, gallery, team stories, testimonials, FAQ, CTA |
+| `/` | Home: hero, hot homes, stats, regions, gallery, team stories, testimonials, FAQ, CTA |
 | `/communities` | All 12 Texas communities with status badges, specs, filters |
 | `/floor-plans` | 6 award-winning floor plans with full feature lists and specs |
 | `/available-homes` | Move-in ready & Hot Homes with regional filter tabs |
 | `/portfolio` | Alternating full-width project showcase with awards |
-| `/gallery` | Masonry photo gallery — exteriors, kitchens, living spaces, outdoor |
+| `/gallery` | Masonry photo gallery: exteriors, kitchens, living spaces, outdoor |
 | `/about` | Company story, leadership team, core values, awards |
 | `/process` | 6-step build process timeline with FAQ accordion |
 | `/contact` | Contact form with 3 office locations and FAQ section |
-| `/api/lead` | POST endpoint — validates, Turnstile-verifies, and stores leads |
+| `/api/lead` | POST endpoint: validates, Turnstile-verifies, and stores leads |
 | `/api/inventory` | Protected CRUD endpoint for inventory management |
 
 ### UI/UX
-- 💎 **Luxury design system** — gold (`#c9a84c`) + charcoal palette, Playfair Display + Inter fonts
-- 📱 **Fully responsive** — optimised for mobile, tablet, and widescreen
+- 💎 **Luxury design system** using gold (`#c9a84c`) + charcoal palette, Playfair Display + Inter fonts
+- 📱 **Fully responsive** across mobile, tablet, and widescreen
 - 🧭 **Sticky responsive navbar** with hamburger menu on mobile
-- 🤖 **AI Chat Widget (Aria)** — 25+ topic knowledge base, quick-reply chips, typing indicator, unread badge
-- 🎞️ **Smooth animations** — CSS hover zoom, chip transitions, chat slide-up
-- ♿ **Accessible** — semantic HTML, aria labels, focus states
-- 🔔 **Announcement bar** — dismissible promotional banner
+- 🤖 **AI Chat Widget (Aria)** with 25+ topic knowledge base, quick-reply chips, typing indicator, unread badge
+- 🎞️ **Smooth animations** including CSS hover zoom, chip transitions, chat slide-up
+- ♿ **Accessible** with semantic HTML, aria labels, and focus states
+- 🔔 **Announcement bar** as dismissible promotional banner
 
 ### Security (Production-Ready)
-- ✅ `npm audit` — 0 vulnerabilities
-- 🛡️ HTTP security headers — CSP, HSTS, X-Frame-Options, Permissions-Policy
+- ✅ `npm audit` with 0 vulnerabilities
+- 🛡️ HTTP security headers including CSP, HSTS, X-Frame-Options, Permissions-Policy
 - 🤖 Cloudflare Turnstile bot protection on lead form API
 - 🔐 Constant-time API key comparison for inventory route
 - 📏 Input length limits + full server-side validation
 - 🚫 No raw error messages exposed to clients
-- 🔒 Supabase service-role key — server-side only, never in client bundle
+- 🔒 Supabase service-role key is server-side only, never in client bundle
 
 ---
 
@@ -49,10 +49,10 @@ A full-stack luxury real estate marketing website built with **Next.js 15 (App R
 |---|---|
 | Framework | [Next.js 15](https://nextjs.org) (App Router) |
 | Language | TypeScript 5 |
-| Styling | Custom CSS (globals.css) — CSS custom properties, no Tailwind |
+| Styling | Custom CSS (globals.css) with CSS custom properties, no Tailwind |
 | Fonts | Google Fonts via `next/font` (Playfair Display + Inter) |
 | CMS | [Sanity.io](https://sanity.io) (schemas defined, ready to connect) |
-| Database | [Supabase](https://supabase.com) (PostgreSQL — schema in `db/schema.sql`) |
+| Database | [Supabase](https://supabase.com) (PostgreSQL; schema in `db/schema.sql`) |
 | Bot Protection | [Cloudflare Turnstile](https://developers.cloudflare.com/turnstile/) |
 | Deployment | [Vercel](https://vercel.com) (recommended) |
 
@@ -83,17 +83,17 @@ cp .env.example .env.local
 | Variable | Description |
 |---|---|
 | `SUPABASE_URL` | Your Supabase project URL |
-| `SUPABASE_SERVICE_ROLE_KEY` | Service-role key (server-side only — never expose to browser) |
+| `SUPABASE_SERVICE_ROLE_KEY` | Service-role key (server-side only; never expose to browser) |
 | `SUPABASE_ANON_KEY` | Anon key (for future client-side RLS queries) |
 | `SANITY_PROJECT_ID` | Sanity project ID |
 | `SANITY_DATASET` | Sanity dataset (e.g. `production`) |
 | `SANITY_API_TOKEN` | Sanity write token (server-side mutations only) |
 | `NEXT_PUBLIC_CLOUDFLARE_TURNSTILE_SITE_KEY` | Turnstile site key (safe for browser) |
 | `CLOUDFLARE_TURNSTILE_SECRET_KEY` | Turnstile secret key (server-side only) |
-| `API_SECRET_KEY` | 32+ char random secret for inventory API route — generate with `openssl rand -hex 32` |
+| `API_SECRET_KEY` | 32+ char random secret for inventory API route; generate with `openssl rand -hex 32` |
 | `EMAIL_SERVICE_API_KEY` | Email provider key (for confirmation emails) |
 
-> **Local dev without external services:** The app runs without any env vars set — API routes will return graceful errors, and pages use static mock data.
+> **Local dev without external services:** The app runs without any env vars set. API routes will return graceful errors, and pages use static mock data.
 
 ### 3. Run Development Server
 
@@ -169,7 +169,7 @@ Vercel is the fastest way to get a live HTTPS URL:
 2. Go to [vercel.com](https://vercel.com) → **Add New Project**
 3. Import your `builder-company` GitHub repo
 4. Add all environment variables from `.env.example`
-5. Click **Deploy** — you'll get a live `https://builder-company.vercel.app` URL in ~60 seconds
+5. Click **Deploy** and you'll get a live `https://builder-company.vercel.app` URL in ~60 seconds
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
 
@@ -177,7 +177,14 @@ Vercel is the fastest way to get a live HTTPS URL:
 
 ## 📸 Screenshots
 
-> _(Add screenshots of your live site here after deployment)_
+**Hero Section**
+![Hero section showing luxury home with gold headline](docs/screenshots/hero.png)
+
+**Communities Page**
+![Communities page with filter tabs and property cards](docs/screenshots/communities.png)
+
+**Aria AI Chatbot**
+![Aria chatbot widget open on the gallery section](docs/screenshots/chatbot.png)
 
 ---
 
@@ -187,7 +194,7 @@ Vercel is the fastest way to get a live HTTPS URL:
 - [ ] Integrate real Cloudflare Turnstile on contact form
 - [ ] Wire Supabase for live inventory and lead storage
 - [ ] Add email confirmations via Resend/SendGrid
-- [ ] SEO — sitemap.xml, robots.txt, OpenGraph images
+- [ ] SEO: sitemap.xml, robots.txt, OpenGraph images
 - [ ] Google Analytics / Vercel Analytics integration
 - [ ] Admin dashboard for lead management
 
