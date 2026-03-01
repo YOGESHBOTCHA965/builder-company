@@ -21,7 +21,8 @@ export async function POST(req: NextRequest) {
   // Input validation (length limits, format checks)
   const validation = validateLeadInput(data);
   if (!validation.ok) {
-    return NextResponse.json({ error: validation.error }, { status: 400 });
+    const errMsg = 'error' in validation ? (validation as { ok: false; error: string }).error : 'Validation failed';
+    return NextResponse.json({ error: errMsg }, { status: 400 });
   }
 
   // Turnstile bot-protection verification
