@@ -2,7 +2,7 @@
 
 A full-stack luxury real estate marketing website built with **Next.js 15 (App Router)**, **TypeScript**, and a fully custom CSS design system — no Tailwind, no component libraries. Inspired by top-tier home builder brands and designed to outperform them.
 
-> Live demo: _(add your Vercel URL here after deployment)_
+> **Live demo:** [https://builder-company.vercel.app](https://builder-company.vercel.app)
 
 ---
 
