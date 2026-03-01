@@ -178,13 +178,13 @@ Vercel is the fastest way to get a live HTTPS URL:
 ## 📸 Screenshots
 
 **Hero Section**
-![Hero section showing luxury home with gold headline](docs/screenshots/hero.png)
+[![Hero](https://image.thum.io/get/width/1280/crop/800/https://builder-company.vercel.app/)](https://builder-company.vercel.app/)
 
 **Communities Page**
-![Communities page with filter tabs and property cards](docs/screenshots/communities.png)
+[![Communities](https://image.thum.io/get/width/1280/crop/800/https://builder-company.vercel.app/communities)](https://builder-company.vercel.app/communities)
 
-**Aria AI Chatbot**
-![Aria chatbot widget open on the gallery section](docs/screenshots/chatbot.png)
+**Floor Plans**
+[![Floor Plans](https://image.thum.io/get/width/1280/crop/800/https://builder-company.vercel.app/floor-plans)](https://builder-company.vercel.app/floor-plans)
 
 ---
 
